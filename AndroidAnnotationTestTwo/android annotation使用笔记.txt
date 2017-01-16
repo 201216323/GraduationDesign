@@ -1,0 +1,23 @@
+﻿一些常用注释的使用方法：
+@AfterInject 定义的方法在类的构造方法执行后执行
+@AfterTextChange定义的方法在TextView及其子类的Text属性改变后执行
+@AfterViews 定义的方法在setContentView后执行
+@Background 定义的方法在后台线程执行
+@BeforeTextChange 定义的方法在TextView及其子类的Text属性改变前执行
+@Click 定义点击监听器
+@EActivity 在Activity中启用Annotations
+@EProvider 在 ContentProvider中启用Annotations
+@EReceive 在BroadcastReceiver中启用Annotations
+@EService 在Service中启用Annotations
+@EView 在自定义的View的子类中启用Annotations
+@Fullscreen 全屏
+@NoTitle 无标题栏
+@EBean 这个普通只能有一个构造函数，这个构造函数要不是没有参数，或者只有一个Context的参数
+@Bean的标签每次都会创建一个实例,所以不能继承一个使用@EBean的类
+  
+  @RootContext
+  Activity activity; 在普通类中引入它所在的Activity或者Service的Context
+  @RootContext
+  Service service;  
+
+
